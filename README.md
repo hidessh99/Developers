@@ -3,3 +3,6 @@ panel hidessh menggunakan sistem pay as you go , tidak ada masa aktif ,jika sald
 
 
 #instalasi PLugin Web panel Hidessh
+wget https://raw.githubusercontent.com/hidessh99/Developers/main/install-plugin.sh;chmod +x install-plugin.sh;./install-plugin.sh
+
+
