@@ -21,20 +21,20 @@ sed -i '/#vmessgrpc$/a\#@ '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
 ```
 
-***1. lokasi config Xray ***
+***1. lokasi config Xray***
 ```
 /etc/xray/config.json // lokasi file xray kamu
 ```
 
-***2. kamu juga bisa custom mau pakai uuid atau username ***
+***2. kamu juga bisa custom mau pakai uuid atau username***
 - jika kamu menggunakan username $user
 - jika kamu menggunakan uuid pakai $uuid
 
-***3. edit Path sesuai script kamu ***
+***3. edit Path sesuai script kamu***
 - jika kamu menggunakan path pribadi bisa mengubah ke path sesuai script kamu
 - jika kamu memakai path whatever abaikan ini
 
-***3. pastikan add vmess dan del vmess sama ***
+***3. pastikan add vmess dan del vmess sama***
 ```
 sed -i "/^#@ $user $exp/,/^},{/d" /etc/xray/config.json
 ```
