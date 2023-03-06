@@ -108,3 +108,9 @@ bisa di letahkan di bawah kode
 ```
 echo -e "bugisisendiri:2082@$Login:$Pass"
 ```
+
+# kontak
+jika kamu ingin mencoba atau testing bisa hub saya
+Telegram : t.me/riyan99s
+email : admin@hidessh.com
+daftar akun di reseller.hidessh.com dan request seller
