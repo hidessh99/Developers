@@ -28,8 +28,11 @@ sed -i '/#vmessgrpc$/a\#@ '"$user $exp"'\
 - ubah sesuai dengan lokasi file xray kamu
 
 ***2. kamu juga bisa custom mau pakai uuid atau username***
-- jika kamu menggunakan username $user
-- jika kamu menggunakan uuid pakai $uuid
+```
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
+```
+- jika kamu menggunakan username , ganti id dengan : $user
+- jika kamu menggunakan uuid, ganti id dengan $uuid 
 
 ***3. edit Path sesuai script kamu***
 ```
@@ -72,8 +75,11 @@ sed -i '/#trojan-grpc$/a\#& '"$user $exp"'\
 - ubah sesuai dengan lokasi file xray kamu
 
 ***2. kamu juga bisa custom mau pakai uuid atau username***
-- jika kamu menggunakan username $user
-- jika kamu menggunakan uuid pakai $uuid
+```
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
+```
+- jika kamu menggunakan username , ganti id dengan : $user
+- jika kamu menggunakan uuid, ganti id dengan $uuid 
 
 ***3. edit Path sesuai script kamu***
 ```
