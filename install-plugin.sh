@@ -11,8 +11,8 @@ wget -O /usr/local/bin/add-vmess-user "https://raw.githubusercontent.com/hidessh
 wget -O /usr/local/bin/add-vmess-user "https://raw.githubusercontent.com/hidessh99/Developers/main/del-vmess.sh"
 
 #add on Trojan
-wget -O /usr/local/bin/add-trojan-user "https://raw.githubusercontent.com/hidessh99/Developers/main/add-tr.sh"
-wget -O /usr/local/bin/del-trojan-user "https://raw.githubusercontent.com/hidessh99/Developers/main/del-tr.sh"
+wget -O /usr/local/bin/add-trojan-user "https://raw.githubusercontent.com/hidessh99/Developers/main/add-trojan.sh"
+wget -O /usr/local/bin/del-trojan-user "https://raw.githubusercontent.com/hidessh99/Developers/main/del-trojan.sh"
 
 #permission
 chmod +x /usr/local/bin/add-ssh-user
