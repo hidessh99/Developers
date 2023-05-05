@@ -38,7 +38,7 @@ sed -i '/#trojan-grpc$/a\#& '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 
 trojanlink="trojan://$uuid@$domain:$tls?path=$pathtrojan&security=tls&host=$domain&type=ws&sni=$domain#$user"
-trojanlink1="trojan://${uuid}@$domain:$none?path=$pathtrojan&security=none&host=$domain&type=ws#$user"
+# trojanlink1="trojan://${uuid}@$domain:$none?path=$pathtrojan&security=none&host=$domain&type=ws#$user"
 trojanlink2="trojan://${uuid}@$domain:$tls?security=tls&encryption=none&type=grpc&serviceName=$pathtrojangrpc&sni=$domain#$user"
 sleep 1 && systemctl restart xray > /dev/null 2>&1
 clear
@@ -54,7 +54,7 @@ echo -e "ServiceName : ${pathtrojangprc}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "Link WS : ${trojanlink}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "Link Non TLS : ${trojanlink1}" | tee -a /etc/log-create-user.log
+echo -e "Link Non TLS : ${trojanlink2}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "Link GRPC : ${trojanlink2}" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
