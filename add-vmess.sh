@@ -35,7 +35,8 @@ clear
         done
  
 uuid=$(cat /proc/sys/kernel/random/uuid)
-masaaktif=90
+#masa aktif akun 30 hari
+masaaktif=30
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vmess$/a\#@ '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json

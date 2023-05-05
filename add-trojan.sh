@@ -29,8 +29,8 @@ if [[ "$uuid" == "" ]]; then
  echo "Password is required!"
  exit 1
 fi
-
-masaaktif=90
+#masa aktif akun 30 hari
+masaaktif=30
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#trojan$/a\#& '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json

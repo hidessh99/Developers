@@ -9,9 +9,18 @@ domain=$(cat /etc/v2ray/domain)
 read -p "Username : " Login
 read -p "Password : " Pass
 
-useradd -s /bin/false -M $Login
-exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
+#generate expired account 30 day
+masaaktif = 30 
+
+useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
+expi="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
+hariini=`date -d "0 days" +"%Y-%m-%d"`
+expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
+
+# useradd -s /bin/false -M $Login
+# exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
+# echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 echo -e ""
 echo -e "Thank You For Using Our Services"
 echo -e "SSH Account Info"
@@ -27,6 +36,7 @@ echo -e "Port Suid      : 3128, 8080"
 echo -e "Websocket HTTP: 2082, 8880"
 echo -e "Websocket HTTPS: 443"
 echo -e "badvpn         : 7100-7300"
+echo -e "Masa Aktif     : $masaaktif Hari"
 echo -e "==============================="
 echo -e "PAYLOAD"                                                          
 echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
