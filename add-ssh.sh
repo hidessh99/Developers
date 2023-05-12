@@ -10,7 +10,7 @@ read -p "Username : " Login
 read -p "Password : " Pass
 
 #generate expired account 30 day
-masaaktif = 30 
+masaaktif=30 
 
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
 expi="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
