@@ -68,15 +68,7 @@ vmess2=$(echo $response | jq -r '.links[1]')
 vmess3=$(echo $response | jq -r '.links[2]')
 vmess4=$(echo $response | jq -r '.links[3]')
 vmess5=$(echo $response | jq -r '.links[4]')
-
 urlsub=$domain$subs
-echo $urlsub
-#echo $vmess1
-#echo $vmess2
-
-#echo $username > $username.txt
-#echo $links
-#echo links > links.txt
 
 clear
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
