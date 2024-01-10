@@ -12,7 +12,7 @@ echo $domain > domain.txt
 
 url=$domain/api/admin/token
 response=$(curl -X POST -d "username=$username&password=$password&grant_type=password&scope=" -H "Accept: application/json" $url)
-echo $response
+#echo $response
 token=$(echo $response | jq -r '.access_token')
 echo $token > token.txt
 
