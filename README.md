@@ -144,6 +144,12 @@ masaaktif=30
 
 artinya setiap pembuatan akun akun mempunya masa aktif 30 hari secara otomatis , setelah 30 hari maka akun otomatis terhapus
 
+# instalasi PLugin Web panel Hidessh bye autoscript Marzban
+
+```
+wget https://raw.githubusercontent.com/hidessh99/Developers/main/Marzban/installer3.sh && chmod +x installer3.sh && bash installer3.sh
+```
+
 # kontak
 
 jika kamu ingin mencoba atau testing bisa hub saya
