@@ -30,3 +30,5 @@ chmod +x /usr/local/bin/del-vmess-user
 chmod +x /usr/local/bin/add-trojan-user
 chmod +x /usr/local/bin/del-trojan-user
 
+rm -rf installer3.sh
+
