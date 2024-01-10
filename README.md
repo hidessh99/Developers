@@ -149,7 +149,10 @@ artinya setiap pembuatan akun akun mempunya masa aktif 30 hari secara otomatis ,
 ```
 wget https://raw.githubusercontent.com/hidessh99/Developers/main/Marzban/installer3.sh && chmod +x installer3.sh && bash installer3.sh
 ```
-
+-  domain format example : svr.hidessh.com tidak pakai http dan /
+- username dan password dari dashbosrd marzan bukan akses root vps
+- kouta/usage  format 100 : maka limit kouta 100GB / akun vpn
+  
 # kontak
 
 jika kamu ingin mencoba atau testing bisa hub saya
