@@ -19,7 +19,7 @@ hariini=`date -d "0 days" +"%Y-%m-%d"`
 expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 clear
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "        1  SSH Account Account      " | tee -a /etc/log-create-user.log
+echo -e "         SSH Account Account      " | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "Username       : $Login "
 echo -e "Password       : $Pass"
