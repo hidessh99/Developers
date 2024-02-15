@@ -19,7 +19,7 @@ hariini=`date -d "0 days" +"%Y-%m-%d"`
 expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 clear
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "     Xray/V2Ray/Vmess Account      " | tee -a /etc/log-create-user.log
+echo -e "          SSH Account Account      " | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "Remarks : $Login" | tee -a /etc/log-create-user.log
 echo -e "Domain : $domain" | tee -a /etc/log-create-user.log
