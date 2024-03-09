@@ -1,6 +1,6 @@
    #bin bash
-
-    #bin get data
+apt update -y
+apt-get install jq -y
 read -rp "domain (example:svr.hidessh.com) : " -e domain
 read -rp "username: " -e username
 read -rp "password: " -e password
